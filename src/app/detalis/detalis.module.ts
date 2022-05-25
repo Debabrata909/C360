@@ -5,6 +5,7 @@ import { DetalisRoutingModule } from './detalis-routing.module';
 import { LeadDetailsComponent } from './lead-details/lead-details.component';
 import {FieldsetModule} from 'primeng/fieldset';
 import {TableModule} from 'primeng/table';
+import {DropdownModule} from 'primeng/dropdown';
 @NgModule({
   declarations: [
     LeadDetailsComponent
@@ -13,7 +14,8 @@ import {TableModule} from 'primeng/table';
     CommonModule,
     DetalisRoutingModule,
     FieldsetModule,
-    TableModule
+    TableModule,
+    DropdownModule
   ]
 })
 export class DetalisModule { }

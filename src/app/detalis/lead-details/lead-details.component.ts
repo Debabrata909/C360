@@ -8,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class LeadDetailsComponent implements OnInit {
   customers: any = [];
   loading: boolean = true;
+  statuses: any = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    this.statuses = [
+      {label: 'Unqualified', value: 'unqualified'},
+      {label: 'Qualified', value: 'qualified'},
+      {label: 'New', value: 'new'},
+      {label: 'Negotiation', value: 'negotiation'},
+      {label: 'Renewal', value: 'renewal'},
+      {label: 'Proposal', value: 'proposal'}
+  ]
+}
   }
 
 }
