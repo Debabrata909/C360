@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DataServicsService } from './Servies/data-servics.service';
+import { HttpClientModule } from '@angular/common/http';
+import {ConfirmationService} from 'primeng/api';
+import { MessageService } from 'primeng/api';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,9 +19,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataServicsService,ConfirmationService,MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
